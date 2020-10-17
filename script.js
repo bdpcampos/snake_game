@@ -135,7 +135,7 @@ function saveHighScore(){              //Saves high score to local storage on cl
 
 function startGame() {
 
-    screenInterval = setInterval(drawScreen, 150); //Game pace interval in milliseconds
+    screenInterval = setInterval(drawScreen, 100); //Game pace interval in milliseconds
 }
 
 function stopGame() {
