@@ -117,7 +117,7 @@ function hittedApple() {  //Function that defines when snake hits an apple
 function showScore() { //Defines actual player score
 
     scoreValue = snakeSize - snakeInicialSize;
-    score.innerHTML = `<p>Score: ${scoreValue}</p>`
+    score.textContent = `Score: ${scoreValue}`
 }
 
 
@@ -127,7 +127,7 @@ function saveHighScore(){              //Saves high score to local storage on cl
 
         localStorage.highScoreValue = JSON.stringify(scoreValue);
         highScoreValue = scoreValue;
-        highScore.innerHTML = `<p>High Score: ${highScoreValue}</p>`;
+        highScore.textContent = `High Score: ${highScoreValue}`;
     }
     
 }
@@ -201,4 +201,4 @@ if(localStorage.highScoreValue){            //Retrieves high score from local st
     highScoreValue = 0;
 }
 
-highScore.innerHTML = `<p>High Score: ${highScoreValue}</p>` //Shows high score on screen
+highScore.textContent = `High Score: ${highScoreValue}` //Shows high score on screen
